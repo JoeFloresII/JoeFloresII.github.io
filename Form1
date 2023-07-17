@@ -1,0 +1,47 @@
+<html>
+<body>
+<form>
+<table>
+  <tr>
+    <td>First Name:</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Last name:</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Address:</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Console Preference:</td>
+    <td>
+      <input type="radio" name="consolepref" />PS5<br/>
+      <input type="radio" name="consolepref" />XBox One<br/>
+      <input type="radio" name="consolepref" />Switch<br/>
+    </td>
+  </tr>
+  <tr>
+    <td>Favorite Color:</td>
+    <td>
+      <input type="radio" name="favcolor" />Red<br/>
+      <input type="radio" name="favcolor" />Blue<br/>
+      <input type="radio" name="favcolor" />Green<br/>
+      <input type="radio" name="favcolor" />Purple<br/>
+    </td>
+  </tr>
+  <tr>
+    <td>Previous Programming Languages:</td>
+    <td>
+      <input type="checkbox" />HTML<br/>
+      <input type="checkbox" />Java<br/>
+      <input type="checkbox" />Python<br/>
+      <input type="checkbox" />C++<br/>
+    </td>
+  </tr>
+</table>
+  <input type="submit"/>
+</form>
+</body>
+</html>
