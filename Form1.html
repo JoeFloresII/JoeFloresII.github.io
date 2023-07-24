@@ -3,10 +3,9 @@
 <script>
   function CalcTotal()
    {
-     var unit = parseInt(document.getElementById("units")).value;
+     var unit = parseInt(document.getElementById("units")).textContent;
      var display = unit * 500; 
-     alert(display);
-     document.getElementById("displaytotal").value = display
+     document.getElementById("displaytotal").textContent = display
    }
 </script>  
 </head>
