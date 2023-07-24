@@ -4,8 +4,9 @@
   function CalcTotal()
    {
      let unit = parseInt(document.getElementById("units").value;
-     let display = unit * 500;    
-      document.getElementById("displaytotal").innerHTML = display;
+     let display = unit * 500; 
+     alert(display);
+     document.getElementById("displaytotal").innerHTML = display
    }
 </script>  
 </head>
@@ -57,7 +58,7 @@
    <tr>
     <td>Number of PS5's to Purchase:</td>
     <td><input type="text" id="units"></td>
-    <td><input type="button" onclick="CalcTotal();"/>Calculate Total</td>
+    <td><input type="button" value="Calculate Total" onclick="CalcTotal();"/></td>
   </tr>
    <tr>
     <td>Total Cost to Purchase:</td>
