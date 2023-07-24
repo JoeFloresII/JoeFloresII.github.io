@@ -1,4 +1,16 @@
 <html>
+<head>
+<script>
+  String displaytotal = "$0"
+  function CalcTotal()
+   {
+      unit = parseFloat(document.getElementById("units").value;
+      total = unit * 500;
+      displaytotal = "$" + String.valueOf(total);
+      document.getElementById("displaytotal").innerHTML = displaytotal;
+   }
+</script>  
+</head>
 <body>
 <form>
 <table>
@@ -40,8 +52,22 @@
       <input type="checkbox" />C++<br/>
     </td>
   </tr>
+   <tr>
+    <td>Purchase Price of PS5:</td>
+    <td>$500</td>
+  </tr>
+   <tr>
+    <td>Number of PS5's to Purchase:</td>
+    <td><input type="text" id="units"></td>
+  </tr>
+   <tr>
+    <td>Total Cost to Purchase:</td>
+    <td><input type="text"></td>
+    <td><input type="button" onclick="CalcTotal();"/></td>
+    <div id="displaytotal"></div>
+  </tr>
 </table>
-  <input type="submit"/>
+
 </form>
 </body>
 </html>
