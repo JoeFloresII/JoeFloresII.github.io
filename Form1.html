@@ -4,7 +4,8 @@
   function CalcTotal()
    {
      var unit = parseInt(document.getElementById("units").value);
-     var displaycontent = unit * 500; 
+     var total = unit * 500; 
+     var displaycontent = "$" + total;
      document.getElementById("displaytotal").value = displaycontent
    }
 </script>  
@@ -61,7 +62,7 @@
   </tr>
    <tr>
     <td>Total Cost to Purchase:</td>
-    <td><input type="text" id="displaytotal"></td>
+    <td id="displaytotal"></td>
   </tr>
 </table>
 </form>
