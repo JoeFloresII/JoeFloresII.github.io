@@ -1,10 +1,9 @@
 <html>
 <head>
 <script>
-  String displaytotal = "$0"
   function CalcTotal()
    {
-      unit = parseFloat(document.getElementById("units").value;
+      unit = parseInt(document.getElementById("units").value;
       total = unit * 500;
       displaytotal = "$" + String.valueOf(total);
       document.getElementById("displaytotal").innerHTML = displaytotal;
@@ -59,15 +58,13 @@
    <tr>
     <td>Number of PS5's to Purchase:</td>
     <td><input type="text" id="units"></td>
+    <td><input type="button" value="Calculate Total" onclick="CalcTotal();"/></td>
   </tr>
    <tr>
     <td>Total Cost to Purchase:</td>
-    <td><input type="text"></td>
-    <td><input type="button" value="Calculate Total" onclick="CalcTotal();"/></td>
-    <div id="displaytotal"></div>
+    <td id="displaytotal"></td>
   </tr>
 </table>
-
 </form>
 </body>
 </html>
