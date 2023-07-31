@@ -1,9 +1,103 @@
 <html>
-<body>
 <head>
 <title>Joe Flores - Web Programming</title>
-</head>
+<style>
+	body {
+		background-color: #f34a53;
+	}
+	p {
+		color: #000000;
+	}
+	/* Navbar container */
+	.navbar {
+  		overflow: hidden;
+  		background-color: #333;
+  		font-family: Arial;
+	}
 
+	/* Links inside the navbar */
+	.navbar a {
+  		float: left;
+  		font-size: 16px;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+	}
+
+	/* The dropdown container */
+	.dropdown {
+  		float: left;
+ 		 overflow: hidden;
+	}
+
+	/* Dropdown button */
+	.dropdown .dropbtn {
+ 		 font-size: 16px;
+ 		 border: none;
+  		 outline: none;
+  		 color: white;
+ 		 padding: 14px 16px;
+		 background-color: inherit;
+ 		 font-family: inherit; /* Important for vertical align on mobile phones */
+ 		 margin: 0; /* Important for vertical align on mobile phones */
+	}
+
+	/* Add a red background color to navbar links on hover */
+	.navbar a:hover, .dropdown:hover .dropbtn {
+ 		 background-color: red;
+	}
+
+	/* Dropdown content (hidden by default) */
+	.dropdown-content {
+ 		 display: none;
+ 		 position: absolute;
+ 		 background-color: #f9f9f9;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 		 z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+ 		 float: none;
+ 		 color: black;
+ 		 padding: 12px 16px;
+ 		 text-decoration: none;
+ 		 display: block;
+		 text-align: left;
+	}
+
+	/* Add a grey background color to dropdown links on hover */
+	.dropdown-content a:hover {
+  background-color: #ddd;
+	}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {
+ 		 display: block;
+	}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="https://joefloresii.github.io/">Home</a>
+  <a href="#">Gallery</a>
+  <a href="#">How to/Techniques</a>
+  <a href="#">Future Considerations</a>
+  <a href="https://joefloresii.github.io/Form1.html">Form 1</a>
+  <div class="dropdown">
+    <button class="dropbtn">Frequent Links
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://kickassanime.am/">Anime Site</a>
+      <a href="https://www.parkwestgallery.com/">Park West Gallery</a>
+      <a href="https://www.tibetanmastiff.com/">Drakyi Tibetan Mastiff's</a>
+    </div>
+  </div>
+</div>
 <p align="center"> This is my project webpage for Web Programming.</p>
 <p align="center">  My name is Joseph Flores II, though I go by Joe. I am a Technical Sergeant in the United States Air Force and have been in the military for almost 12 years as<br> 
 a meteorologist. I have been married for a little over 3 years to my wonderful wife Kindall and we have 2 dogs: Charlotte (6, Mutt) and Teddy (4, Tibetan Mastiff).<br> 
@@ -19,18 +113,5 @@ Below are pictures of my family.</p>
 <img src="https://i.imgur.com/9euSD5F.jpg" width="200" height="280"> 
 <img src="https://i.imgur.com/tVFHBiZ.jpg" width="200" height="280">
 <br></p>
-<table>
-  <tr>
-    <td>Links to frequently visited sites/sites related to hobbies:</td>
-  </tr>
-  <tr>
-    <td><a title="Anime Site" href="https://kickassanime.am/">Anime Site</a></td>
-  </tr>
-  <tr>
-    <td><a title="Park West Gallery" href="https://www.parkwestgallery.com/">Park West Gallery</a></td>
-  </tr>
-  <tr>
-    <td><a title="Drakyi Tibetan Mastiff's" href="https://www.tibetanmastiff.com/">Drakyi Tibetan Mastiff's</a></td>
-  </tr>
 </body>
 </html>
