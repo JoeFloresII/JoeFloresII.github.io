@@ -6,7 +6,8 @@
      var unit = parseInt(document.getElementById("units").value);
      var total = unit * 500; 
      var displaycontent = "$" + total;
-     document.getElementById("displaytotal").value = displaycontent
+     document.getElementById("displaytotal").value = displaycontent;
+     alert(document.getElementByID("discount").value)
    }
 </script>  
 </head>
@@ -51,16 +52,23 @@
       <input type="checkbox" />C++<br/>
     </td>
   </tr>
-   <tr>
+  <tr>
     <td>Purchase Price of PS5:</td>
     <td>$500</td>
   </tr>
-   <tr>
+  <tr>
+    <td>10% Military Discount Applicable:</td>
+    <td>
+      <input type="radio" name="discount" id="discount">Yes<br/>
+      <input type="radio" name="discount">No<br/>    
+    </td>
+  </tr>
+  <tr>
     <td>Number of PS5's to Purchase:</td>
     <td><input type="text" id="units"></td>
     <td><input type="button" onclick="CalcTotal()" value="Calculate Total"/></td>
   </tr>
-   <tr>
+  <tr>
     <td>Total Cost to Purchase:</td>
     <td><input type="text" id="displaytotal"></td>
   </tr>
