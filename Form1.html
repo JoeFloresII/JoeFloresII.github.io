@@ -3,21 +3,21 @@
 <script>
   function CalcTotal()
    {
-     var discounts = document.getElementById("discount").value;
      var unit = parseInt(document.getElementById("units").value);
-     if discounts = "on"
+     if(document.getElementById('discount').checked == true)
      {
        var total = (unit * 500) - ((unit * 500) * .1);
        var saved = (unit * 500) * .1;
        var displaycontent = "$" + total + " You saved: $" + saved
+       document.getElementById("displaytotal").value = displaycontent;
      }
      else
      {
        var total = unit * 500;
-       var displaycontent = "$" + total
+       var displaycontent = "$" + total;
+       document.getElementById("displaytotal").value = displaycontent;
      }
-     document.getElementById("displaytotal").value = displaycontent;
-     alert(document.getElementById("discount").value)
+     alert(discounts)
    }
 </script>  
 </head>
@@ -70,7 +70,7 @@
     <td>10% Military Discount Applicable:</td>
     <td>
       <input type="radio" name="discount" id="discount">Yes<br/>
-      <input type="radio" name="discount">No<br/>    
+      <input type="radio" name="discount" id="nodiscount">No<br/>    
     </td>
   </tr>
   <tr>
