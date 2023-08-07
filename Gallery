@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Joe Flores - Gallery</title>
+<style>
+	body {
+		background-color: #f34a53;
+	}
+	p {
+		color: #000000;
+		font-size: 1.5vw;
+	}
+	/* Navbar container */
+	.navbar {
+  		overflow: hidden;
+  		background-color: #333;
+  		font-family: Arial;
+	}
+
+	/* Links inside the navbar */
+	.navbar a {
+  		float: left;
+  		font-size: 16px;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+	}
+
+	/* The dropdown container */
+	.dropdown {
+  		float: left;
+ 		 overflow: hidden;
+	}
+
+	/* Dropdown button */
+	.dropdown .dropbtn {
+ 		 font-size: 16px;
+ 		 border: none;
+  		 outline: none;
+  		 color: white;
+ 		 padding: 14px 16px;
+		 background-color: inherit;
+ 		 font-family: inherit; /* Important for vertical align on mobile phones */
+ 		 margin: 0; /* Important for vertical align on mobile phones */
+	}
+
+	/* Add a red background color to navbar links on hover */
+	.navbar a:hover, .dropdown:hover .dropbtn {
+ 		 background-color: red;
+	}
+
+	/* Dropdown content (hidden by default) */
+	.dropdown-content {
+ 		 display: none;
+ 		 position: absolute;
+ 		 background-color: #f9f9f9;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 		 z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+ 		 float: none;
+ 		 color: black;
+ 		 padding: 12px 16px;
+ 		 text-decoration: none;
+ 		 display: block;
+		 text-align: left;
+	}
+
+	/* Add a grey background color to dropdown links on hover */
+	.dropdown-content a:hover {
+  background-color: #ddd;
+	}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {
+ 		 display: block;
+	}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="https://joefloresii.github.io/">Home</a>
+  <a href="#">Gallery</a>
+  <a href="#">How to/Techniques</a>
+  <a href="#">Future Considerations</a>
+  <a href="https://joefloresii.github.io/Form1.html">Form 1</a>
+  <div class="dropdown">
+    <button class="dropbtn">Frequent Links
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://kickassanime.am/">Anime Site</a>
+      <a href="https://www.parkwestgallery.com/">Park West Gallery</a>
+      <a href="https://www.tibetanmastiff.com/">Drakyi Tibetan Mastiff's</a>
+      <a href="https://joefloresii.formstack.com/forms/joe_flores_ii">Form 1 - Unit 5</a>
+      <a href="https://vanguardgunworks.com/">Vanguard Gunsmith</a>
+    </div>
+  </div>
+</div>
+<p align="center">
+<img src="https://i.imgur.com/HD2PYwq.jpg" width="200" height="280"> 
+<img src="https://i.imgur.com/6JAV2Sz.jpg" width="200" height="280">
+<img src="https://i.imgur.com/UTbwwj8.jpg" width="200" height="280">
+<img src="https://i.imgur.com/uQlqlSc.jpg" width="200" height="280">
+<img src="https://i.imgur.com/VsXuwKk.jpg" width="200" height="280">
+<img src="https://i.imgur.com/AeFeRcj.jpg" width="200" height="280">
+<img src="https://i.imgur.com/37d0Xbt.jpg" width="200" height="280">
+<img src="https://i.imgur.com/B2JafDa.jpg" width="200" height="280">
+<img src="https://i.imgur.com/1ASQLJw.jpg" width="200" height="280">
+<img src="https://i.imgur.com/Icgvp69.jpg" width="200" height="280">
+<img src="https://i.imgur.com/nse1fDZ.jpg" width="200" height="280">
+<img src="https://i.imgur.com/fs6KZw8.jpg" width="200" height="280">
+</p>
+</body>
+</html>
