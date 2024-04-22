@@ -100,9 +100,9 @@
      var tax = .075
      if(document.getElementById('discount').checked == true)
      {
-       var total = Math.round(((unit * (item + addon)) - (unit * (item + addon) * .1) + (unit * (item + addon) * tax)));
-       var saved = Math.round(unit * (item + addon) * .1);
-       var taxes = Math.round(unit * (item + addon) * tax);
+       var total = (((unit * (item + addon)) - (unit * (item + addon) * .1) + (unit * (item + addon) * tax))).toFixed(2);
+       var saved = (unit * (item + addon) * .1).toFixed(2);
+       var taxes = (unit * (item + addon) * tax).toFixed(2);
        var taxdisplay = "$" + taxes;
        document.getElementById("displaytax").value = taxdisplay;  
        var displaycontent = "$" + total + " You saved: $" + saved;
@@ -110,8 +110,8 @@
      }
      else
      {
-       var total = Math.round((unit * (item + addon)) + (unit * (item + addon) * tax));
-       var taxes = Math.round(unit * (item + addon) * tax);
+       var total = ((unit * (item + addon)) + (unit * (item + addon) * tax)).toFixed(2);
+       var taxes = (unit * (item + addon) * tax).toFixed(2);
        var taxdisplay = "$" + taxes;
        document.getElementById("displaytax").value = taxdisplay;
        var displaycontent = "$" + total;
