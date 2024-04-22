@@ -119,45 +119,35 @@
 <table>
   <tr>
     <td>First Name:</td>
-    <td><input type="text"></td>
+    <td><input type="text" name="firstname" id="firstname"></td>
   </tr>
   <tr>
     <td>Last name:</td>
-    <td><input type="text"></td>
+    <td><input type="text" name="lastname" id="lastname"></td>
   </tr>
   <tr>
     <td>Address:</td>
-    <td><input type="text"></td>
+    <td><input type="text" name="address" id="address"></td>
   </tr>
   <tr>
-    <td>Console Preference:</td>
+    <td>Phone Number:</td>
+    <td><input type="text" name="phonenumber" id="phonenumber"></td>
+  </tr>
+  <tr>
+    <td>Item to Manufacture:</td>
     <td>
-      <input type="radio" name="consolepref" />PS5<br/>
-      <input type="radio" name="consolepref" />XBox One<br/>
-      <input type="radio" name="consolepref" />Switch<br/>
+      <input type="radio" name="item" id="shed" />Shed ($550)<br/>
+      <input type="radio" name="item" id="table" />Table ($300)<br/>
+      <input type="radio" name="item" id="bar" />Bar ($415)<br/>
     </td>
   </tr>
   <tr>
-    <td>Favorite Color:</td>
+    <td>Optional Add-ons:</td>
     <td>
-      <input type="radio" name="favcolor" />Red<br/>
-      <input type="radio" name="favcolor" />Blue<br/>
-      <input type="radio" name="favcolor" />Green<br/>
-      <input type="radio" name="favcolor" />Purple<br/>
+      <input type="checkbox" name="addon" id="painted" />Painted ($50)<br/>
+      <input type="checkbox" name="addon" id="weather" />Weather-proofing ($60)<br/>
+      <input type="checkbox" name="addon" id="hidden" />Hidden Compartments ($100)<br/>
     </td>
-  </tr>
-  <tr>
-    <td>Previous Programming Languages:</td>
-    <td>
-      <input type="checkbox" />HTML<br/>
-      <input type="checkbox" />Java<br/>
-      <input type="checkbox" />Python<br/>
-      <input type="checkbox" />C++<br/>
-    </td>
-  </tr>
-  <tr>
-    <td>Purchase Price of PS5:</td>
-    <td>$500</td>
   </tr>
   <tr>
     <td>10% Military Discount Applicable:</td>
@@ -167,13 +157,18 @@
     </td>
   </tr>
   <tr>
-    <td>Number of PS5's to Purchase:</td>
+    <td>Number of Items to Manufacture:</td>
     <td><input type="text" id="units"></td>
     <td><input type="button" onclick="CalcTotal()" value="Calculate Total"/></td>
   </tr>
   <tr>
     <td>Total Cost to Purchase:</td>
+    <td><input type="text" id="displaytax"></td>
     <td><input type="text" id="displaytotal"></td>
+  </tr>
+  <tr>
+    <td>Credit Card Number:</td>
+    <td><input type="text" id="creditcard"></td>
   </tr>
 </table>
 </form>
