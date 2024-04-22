@@ -84,16 +84,36 @@
 	var item = 300;
      else if(document.getElementById('bar').checked == true)
 	var item = 415;
+     if (document.getElementById('painted').checked == true)
+	var painted = 50;
+     else
+	var painted = 0;
+     if (document.getElementById('weather').checked == true)
+	var weather = 60;
+     else
+	var weather = 0;
+     if (document.getElementById('hidden').checked == true)
+	var hidden = 100;
+     else
+	var hidden = 0;
+     var addon = painted + weather + hidden
+     var tax = .075
      if(document.getElementById('discount').checked == true)
      {
-       var total = (unit * item) - ((unit * item) * .1);
-       var saved = (unit * item) * .1;
-       var displaycontent = "$" + total + " You saved: $" + saved
+       var total = ((unit * (item + addon)) - (unit * (item + addon) * .1) + (unit * (item + addon) * tax));
+       var saved = unit * (item + addon) * .1;
+       var taxes = unit * (item + addon) * tax;
+       var taxdisplay = "$" + taxes;
+       document.getElementById("displaytax").value = taxdisplay;  
+       var displaycontent = "$" + total + " You saved: $" + saved;
        document.getElementById("displaytotal").value = displaycontent;
      }
      else
      {
-       var total = unit * item;
+       var total = (unit * (item + addon)) + (unit * (item + addon) * tax);
+       var taxes = unit * (item + addon) * tax;
+       var taxdisplay = "$" + taxes;
+       document.getElementById("displaytax").value = taxdisplay;
        var displaycontent = "$" + total;
        document.getElementById("displaytotal").value = displaycontent;
      }
