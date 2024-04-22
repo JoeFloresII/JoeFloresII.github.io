@@ -100,18 +100,18 @@
      var tax = .075
      if(document.getElementById('discount').checked == true)
      {
-       var total = ((unit * (item + addon)) - (unit * (item + addon) * .1) + (unit * (item + addon) * tax));
-       var saved = unit * (item + addon) * .1;
-       var taxes = unit * (item + addon) * tax;
-       var taxdisplay = "$" + String.format(%.2f, taxes);
+       var total = Math.round(((unit * (item + addon)) - (unit * (item + addon) * .1) + (unit * (item + addon) * tax)));
+       var saved = Math.round(unit * (item + addon) * .1);
+       var taxes = Math.round(unit * (item + addon) * tax);
+       var taxdisplay = "$" + taxes;
        document.getElementById("displaytax").value = taxdisplay;  
        var displaycontent = "$" + total + " You saved: $" + saved;
        document.getElementById("displaytotal").value = displaycontent;
      }
      else
      {
-       var total = (unit * (item + addon)) + (unit * (item + addon) * tax);
-       var taxes = unit * (item + addon) * tax;
+       var total = Math.round((unit * (item + addon)) + (unit * (item + addon) * tax));
+       var taxes = Math.round(unit * (item + addon) * tax);
        var taxdisplay = "$" + taxes;
        document.getElementById("displaytax").value = taxdisplay;
        var displaycontent = "$" + total;
