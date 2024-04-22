@@ -103,7 +103,7 @@
        var total = ((unit * (item + addon)) - (unit * (item + addon) * .1) + (unit * (item + addon) * tax));
        var saved = unit * (item + addon) * .1;
        var taxes = unit * (item + addon) * tax;
-       var taxdisplay = "$" + taxes;
+       var taxdisplay = "$" + String.format(%.2f, taxes);
        document.getElementById("displaytax").value = taxdisplay;  
        var displaycontent = "$" + total + " You saved: $" + saved;
        document.getElementById("displaytotal").value = displaycontent;
