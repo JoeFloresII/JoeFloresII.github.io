@@ -75,19 +75,26 @@
 	}
 </style>
 <script>
+  var unit = parseInt(document.getElementById("units").value);
+  if(document.getElementById('shed').checked == true)
+	var item = 550;
+  else if(document.getElementById('table').checked == true)
+	var item = 300;
+  else if(document.getElementById('bar').checked == true)
+	var item = 415;
+  
   function CalcTotal()
    {
-     var unit = parseInt(document.getElementById("units").value);
      if(document.getElementById('discount').checked == true)
      {
-       var total = (unit * 500) - ((unit * 500) * .1);
-       var saved = (unit * 500) * .1;
+       var total = (unit * item) - ((unit * item) * .1);
+       var saved = (unit * item) * .1;
        var displaycontent = "$" + total + " You saved: $" + saved
        document.getElementById("displaytotal").value = displaycontent;
      }
      else
      {
-       var total = unit * 500;
+       var total = unit * item;
        var displaycontent = "$" + total;
        document.getElementById("displaytotal").value = displaycontent;
      }
